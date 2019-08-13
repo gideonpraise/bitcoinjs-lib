@@ -45,5 +45,27 @@ module.exports = {
     scriptHash: 0x16,
     wif: 0x9e,
     dustThreshold: 0 // https://github.com/dogecoin/dogecoin/blob/v1.7.1/src/core.h#L155-L160
+  },
+  ravencoin: {
+    messagePrefix: '\x18Ravencoin Signed Message:\n',
+    bip32: {
+      public: 0x0488b21e,
+      private: 0x0488ade4,
+    },
+    pubKeyHash: 0x3c,
+    scriptHash: 0x7a,
+    wif: 0x80,
+    dustThreshold: 546
+  },
+  polytimos: {
+    messagePrefix: '\x18Polytimos Signed Message:\n',
+    bip32: {
+      public: 0x0488b21e,
+      private: 0x0488ade4,
+    },
+    pubKeyHash: 0x37,
+    scriptHash: 0x75,
+    wif: 0x80,
+    dustThreshold: 546
   }
 }
